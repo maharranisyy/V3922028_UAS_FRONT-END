@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .table-container {
+    width: 80%;
+    margin: 12px auto;
+    border-collapse: collapse;
+  }
+  
+  .table-caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table-container th, .table-container td {
+    border: 1px solid #3752aa;
+    padding: 4px;
+    text-align: left;
+  }
+/* Gaya untuk kolom Action */
+.table-container td .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center; /* Menyusun tombol di tengah kolom Action */
+    align-items: center;
+  }
+  
+  .custom-button {
+    font-size: 12px;
+    padding: 6px 0px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .custom-button-delete {
+    font-size: 14px;
+    padding: 6px 0px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Penyesuaian responsif untuk kolom Action pada layar kecil */
+  @media (max-width: 767px) {
+    .table-container td .action-buttons {
+      flex-direction: column;
+    }
+  
+    .table-container td .action-buttons button {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  }
+  
